@@ -7,13 +7,12 @@ import java.util.ArrayList;
 
 public class Hotel {
 
-    private ArrayList<Bedroom>();
-    private ArrayList<Conference>();
-    public Hotel()
+    private final ArrayList<Bedroom> bedrooms;
+    private final ArrayList<Conference> conferences;
 
-
-    public Hotel getHotelType(){
-        return hotel;
+    public Hotel(){
+        this.bedrooms = new ArrayList<Bedroom>();
+        this.conferences = new ArrayList<Conference>();
     }
 
     public void setHotel(hotel.Hotel hotel) {
