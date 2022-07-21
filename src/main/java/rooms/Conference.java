@@ -5,12 +5,12 @@ import hotel.RoomType;
 
 public class Conference extends Room {
 
-    private RoomType capacity;
-    private RoomType roomNumber;
+    private final RoomType roomtype;
+    private String roomName;
 
-    public Conference(RoomType roomType, RoomType capacity, RoomType roomNumber){
-        super(roomType);
-        this.capacity = capacity;
-        this.roomNumber = roomNumber;
+    public Conference(RoomType roomType, String roomName){
+        super(roomType.getCapacity());
+        this.roomtype = roomType;
+        this.roomName = roomName;
     }
 }

@@ -1,25 +1,32 @@
 package hotelTest;
 
+import guest.Guest;
 import hotel.Hotel;
+import hotel.RoomType;
 import org.junit.Before;
 import org.junit.Test;
+import rooms.Bedroom;
 
 import static org.junit.Assert.assertEquals;
 
 
 public class HotelTest {
 
-    private Hotel hotel;
-    private Guest guest1;
+
+    Hotel hotel;
+    Bedroom bedroom;
+    Bedroom bedroom1;
+    Bedroom bedroom2;
+    Conference conference;
+
 
     @Before
     public void before() {
         hotel = new Hotel();
-        bedroom1 = new Bedroom(RoomType.SINGLE, 1);
-        bedroom2 = new Bedroom(RoomType.DOUBLE, 2);
-        bedroom3 = new Bedroom(RoomType.TRIPLE, 3);
-
-
+        bedroom = new Bedroom(RoomType.SINGLE, 1);
+        bedroom1 = new Bedroom(RoomType.DOUBLE, 2);
+        bedroom2 = new Bedroom(RoomType.TRIPLE, 3);
+        conference = new Conference(RoomType.LARGE_CONFERENCE, "Omega");
     }
 
     @Test
@@ -39,7 +46,8 @@ public class HotelTest {
     }
 
     @Test
-    public void canAddConferenceRooms(){
-        hotel.addConferenceRoom(conferenceRoom1);
+    public void canAddConferenceRooms() {
+        hotel.addConference(conference);
         assertEquals(1, hotel.getNumberOfConferenceRooms());
+    }
 }
