@@ -1,8 +1,15 @@
 package hotel;
 
+import rooms.Bedroom;
+import rooms.Conference;
+
+import java.util.ArrayList;
+
 public class Hotel {
 
-    private Hotel hotel;
+    private ArrayList<Bedroom>();
+    private ArrayList<Conference>();
+    public Hotel()
 
 
     public Hotel getHotelType(){
