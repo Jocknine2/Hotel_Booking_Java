@@ -1,8 +1,11 @@
 package hotelTest;
 
+import guest.Guest;
 import hotel.Hotel;
+import hotel.RoomType;
 import org.junit.Before;
 import org.junit.Test;
+import rooms.Bedroom;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class HotelTest {
 
     private Hotel hotel;
-    private Guest guest1;
+    private Guest guest;
 
     @Before
     public void before() {

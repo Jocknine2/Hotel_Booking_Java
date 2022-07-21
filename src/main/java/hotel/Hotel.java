@@ -26,4 +26,10 @@ public class Hotel {
     public Hotel shouldBeAbleToCheckOut(){
 
     }
+
+    public int getNumberOfBedrooms() {
+    }
+
+    public int getNumberOfConferenceRooms() {
+    }
 }

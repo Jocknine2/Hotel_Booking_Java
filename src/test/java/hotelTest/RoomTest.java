@@ -1,8 +1,7 @@
 import org.junit.Before;
-
-import org.junit.Before;
 import org.junit.Test;
 import rooms.Bedroom;
+
 
 public class RoomTest {
 
@@ -10,11 +9,11 @@ public class RoomTest {
 
     @Before
     public void before(){
-        bedroom - new Bedroom()
+        bedroom - new Bedroom();
 
     }
 
-    @Test
+
 
 
 }
