@@ -1,4 +1,4 @@
-package hotelTest;
+import org.junit.Before;
 
 import org.junit.Before;
 import org.junit.Test;
