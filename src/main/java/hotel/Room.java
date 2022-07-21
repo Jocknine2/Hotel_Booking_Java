@@ -1,19 +1,25 @@
 package hotel;
 
-public class Room {
+import guest.Guest;
 
+import java.util.ArrayList;
+
+public abstract class Room {
+
+    private int capacity;
     private RoomType roomType;
+    private ArrayList<Guest>guests;
 
-
-    public Room(RoomType roomType){
-        this.roomType = roomType;
+    public Room(, int capacity){
+        this.capacity = capacity;
+        this.guests = new ArrayList<>();
     }
     public RoomType getRoomType(){
         return this.roomType;
     }
 
-    public int getValueFromEnum(){
-        return this.roomType.getValue();
+    public void addGuest(Guest guest){
+        this.guests.add(guest);
     }
 
 }

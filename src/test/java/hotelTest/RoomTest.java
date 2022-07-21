@@ -1,12 +1,20 @@
 import org.junit.Before;
 
+import org.junit.Before;
+import org.junit.Test;
+import rooms.Bedroom;
+
 public class RoomTest {
 
-    Room room;
+    Bedroom bedroom;
 
     @Before
-    public void before() {
-        room = new Room(RoomType.SINGLE);
+    public void before(){
+        bedroom - new Bedroom()
+
     }
+
+    @Test
+
 
 }
