@@ -22,4 +22,25 @@ public abstract class Room {
         this.guests.add(guest);
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public ArrayList<Guest> getGuests() {
+        return guests;
+    }
+
+    public int getNumberOfGuests(){
+        return guests.size();
+    }
+
+    public void addGuestToRoom(Guest guest){
+        guests.add(guest);
+    }
+
+    public void removeGuestFromRoom(Guest guest){
+        guests.remove(guest);
+    }
+
+
 }

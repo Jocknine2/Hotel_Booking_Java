@@ -1,16 +1,17 @@
 package hotelTest;
 
+import guest.Guest;
 import hotel.Hotel;
 import hotel.RoomType;
 import org.junit.Before;
 import org.junit.Test;
 import rooms.Bedroom;
-import rooms.Conference;
 
 import static org.junit.Assert.assertEquals;
 
 
 public class HotelTest {
+
 
     Hotel hotel;
     Bedroom bedroom;
