@@ -15,20 +15,20 @@ public class Hotel {
         this.conferences = new ArrayList<Conference>();
     }
 
-    public void setHotel(hotel.Hotel hotel) {
-        this.hotel = hotel;
+    public void addBedroom(Bedroom bedroom){
+        this.bedrooms.add(bedroom);
     }
 
-    public Hotel shouldBeAbleToCheckIn(){
-
-    }
-    public Hotel shouldBeAbleToCheckOut(){
-
+    public void addConference(Conference conference){
+        this.conferences.add(conference);
     }
 
     public int getNumberOfBedrooms() {
+        return this.bedrooms.size();
     }
 
     public int getNumberOfConferenceRooms() {
+        return this.conferences.size();
     }
+
 }
